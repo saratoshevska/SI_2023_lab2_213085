@@ -2,7 +2,7 @@
 <h2>Сара Тошевска 213085</h2>
 <h3>Control Flow Graph</h3>
 
-![cfg_lab](https://github.com/saratoshevska/SI_2023_lab2_213085/assets/129458397/0043bd61-787a-4d2c-9828-b3c7e9a594e2)
+![CFG](image/cfg_lab.jpg)
 
 <h3>Цикломатска комплексност</h3>
 
