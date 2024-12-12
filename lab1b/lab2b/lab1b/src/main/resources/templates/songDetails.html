@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Song Details</title>
+</head>
+<body>
+<h1 th:text="${selectedSong.title}">Song Title</h1>
+<p>Genre: <span th:text="${selectedSong.genre}"></span></p>
+<p>Year: <span th:text="${selectedSong.releaseYear}"></span></p>
+<h2>Performers:</h2>
+<ul>
+    <li th:each="artist : ${selectedSong.performers}" th:text="${artist.firstName} + ' ' + ${artist.lastName}"></li>
+</ul>
+<h2>Add Artist</h2>
+<form th:action="@{/songDetails}" th:method="POST">
+    <input type="hidden" name="trackId" th:value="${selectedSong.trackId}">
+    <select name="artistId">
+        <option th:each="artist : ${artists}" th:value="${artist.id}" th:text="${artist.firstName} + ' ' + ${artist.lastName}"></option>
+    </select>
+    <button type="submit">Add Artist</button>
+</form>
+</body>
+</html>
