@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,3 +34,40 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Add Artist</title>
+</head>
+<body>
+<h1>Add Artist</h1>
+<form th:action="@{/artist}" th:method="POST">
+    <input type="hidden" name="action" value="add">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <button type="submit">Add Artist</button>
+</form>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Bio</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="artist : ${artists}">
+        <td th:text="${artist.name}"></td>
+        <td th:text="${artist.surname}"></td>
+        <td th:text="${artist.bio}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+>>>>>>> 7c6648558d2896e91b6d75476646ca49db013d34

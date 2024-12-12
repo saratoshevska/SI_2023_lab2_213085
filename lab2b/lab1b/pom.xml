@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<<<<<<< HEAD
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+=======
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+>>>>>>> 7c6648558d2896e91b6d75476646ca49db013d34
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -8,7 +12,11 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+<<<<<<< HEAD
 	<groupId>mk.finki.ukim.wp</groupId>
+=======
+	<groupId>mk.ukim.finki.wp</groupId>
+>>>>>>> 7c6648558d2896e91b6d75476646ca49db013d34
 	<artifactId>lab</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>lab1b</name>
@@ -28,7 +36,10 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+<<<<<<< HEAD
 		<spring-modulith.version>1.2.4</spring-modulith.version>
+=======
+>>>>>>> 7c6648558d2896e91b6d75476646ca49db013d34
 	</properties>
 	<dependencies>
 		<dependency>
@@ -39,6 +50,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.modulith</groupId>
 			<artifactId>spring-modulith-starter-core</artifactId>
@@ -53,6 +65,9 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+=======
+
+>>>>>>> 7c6648558d2896e91b6d75476646ca49db013d34
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -64,6 +79,7 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+<<<<<<< HEAD
 			<groupId>org.springframework.modulith</groupId>
 			<artifactId>spring-modulith-starter-test</artifactId>
 			<scope>test</scope>
@@ -89,6 +105,23 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+=======
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
+	</dependencies>
+>>>>>>> 7c6648558d2896e91b6d75476646ca49db013d34
 
 	<build>
 		<plugins>
@@ -107,4 +140,8 @@
 		</plugins>
 	</build>
 
+<<<<<<< HEAD
 </project>
+=======
+</project>
+>>>>>>> 7c6648558d2896e91b6d75476646ca49db013d34

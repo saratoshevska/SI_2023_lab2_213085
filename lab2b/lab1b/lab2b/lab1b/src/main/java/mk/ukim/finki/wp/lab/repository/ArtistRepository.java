@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package mk.ukim.finki.wp.lab.repository;
 
 import mk.ukim.finki.wp.lab.bootstrap.DataHolder;
@@ -30,3 +31,37 @@ public class ArtistRepository {
 }
 
 
+=======
+package mk.ukim.finki.wp.lab.repository;
+
+import mk.ukim.finki.wp.lab.bootstrap.DataHolder;
+import mk.ukim.finki.wp.lab.model.Artist;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public class ArtistRepository {
+    public List<Artist> findAll(){
+        return DataHolder.artists;
+    }
+    public Optional<Artist> findById(Long id){
+        return DataHolder.artists.stream().filter(a -> a.getId().equals(id)).findFirst();
+    }
+    public List<Artist> searchArtists(String searchTerm) {
+        return artists.stream()
+                .filter(artist -> artist.getName().toLowerCase().contains(searchTerm.toLowerCase()) ||
+                        artist.getSurname().toLowerCase().contains(searchTerm.toLowerCase()) ||
+                        artist.getBio().toLowerCase().contains(searchTerm.toLowerCase()))
+                .collect(Collectors.toList());
+    }
+
+    public List<Artist> searchArtists(String searchTerm) {
+        return artistRepository.searchArtists(searchTerm);
+    }
+
+}
+
+
+>>>>>>> 7c6648558d2896e91b6d75476646ca49db013d34
